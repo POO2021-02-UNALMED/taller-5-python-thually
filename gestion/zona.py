@@ -12,7 +12,7 @@ class Zona:
         ani.setZona(self)
 
     def cantidadAnimales(self):
-        return len(animal)
+        return len(self.animales)
 
     def getNombre(self):
         return self.nombre
