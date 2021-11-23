@@ -13,7 +13,7 @@ class Reptil (Animal):
 
     @classmethod
     def cantidadReptiles(clc):
-        len(clc.listado)
+        return len(clc.listado)
 
     @classmethod
     def crearIguana(clc, nombre, edad, genero):

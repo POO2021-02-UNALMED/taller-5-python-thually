@@ -1,8 +1,4 @@
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
+import zooAnimales
 
 class Animal:
     totalAnimales = 0
@@ -16,9 +12,9 @@ class Animal:
 
     @classmethod
     def totalPorTipo(clc):
-        return "Mamiferos: " + str(Mamifero.cantidadMamiferos()) + "\n" + "Aves: " + str(Ave.cantidadAves()) + "\n" + "Reptiles: " + str(Reptil.cantidadReptiles()) + "\n" + "Peces: " + str(Pez.cantidadPeces()) + "\n" + "Anfibios: " +  str(Anfibio.cantidadAnfibios())
+        return "Mamiferos : " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos()) + "\n" + "Aves : " + str(zooAnimales.ave.Ave.cantidadAves()) + "\n" + "Reptiles : " + str(zooAnimales.reptil.Reptil.cantidadReptiles()) + "\n" + "Peces : " + str(zooAnimales.pez.Pez.cantidadPeces()) + "\n" + "Anfibios : " +  str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
 
-    def __str__(self) -> str:
+    def toString(self) -> str:
         return "Mi nombre es " + str(self.nombre) + ", tengo una edad de " + str(self.edad) + ", habito en "+ str(self.habitat) + " y mi genero es " + str(self.genero)
 
     def movimiento(self):

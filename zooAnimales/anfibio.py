@@ -13,7 +13,7 @@ class Anfibio (Animal):
 
     @classmethod
     def cantidadAnfibios(clc):
-        len(clc.listado)
+        return len(clc.listado)
         
     @classmethod
     def crearRana(clc, nombre, edad, genero):
